@@ -11,16 +11,18 @@ public class App
     {
         Scanner scanner = new Scanner(System.in);
         
-        int number = 4;
-        if (number==1){
-            System.out.println("The number is one");
-        } else if (number==2){
-            System.out.println("The number is two");
-        } else if (number==3){
-            System.out.println("The number is three");
-        } else {
-            System.out.println("Something else");
+        System.out.println("Give the first number:");
+        int number1 = Integer.valueOf(scanner.nextLine());
+        System.out.println("Give the second number:");
+        int number2 = Integer.valueOf(scanner.nextLine());
+        if (number1>number2){
+            System.out.println("Greater number is: " + number1);
+        } else if (number1<number2){
+            System.out.println("Greater number is: " + number2);
+        } else if (number1==number2){
+            System.out.println("The numbers are equal!");
         }
+        
     }
 
 }
