@@ -3,20 +3,20 @@ package lv.rvt;
 import java.io.BufferedReader;
 import java.io.BufferedWriter;
 
+import java.util.Scanner;
+
 public class App 
 {
     public static void main( String[] args )
     {
-       //System.out.println("Hello world!");
-       //My code starts here
-        String name = "Kamilla";
-        int age = 16;
-        boolean isOnline = false;
+        Scanner scanner = new Scanner(System.in);
+        
+        int cipars1 = Integer.valueOf(scanner.nextLine());
 
-        System.out.println(name);
-        System.out.println(age);
-        System.out.println(isOnline);
-        //Code ends here
+        int cipars2 = Integer.valueOf(scanner.nextLine());
+
+        int summa = cipars1 + cipars2;
+        System.out.println("Summa ir: " + summa);
     }
 
 }
