@@ -15,8 +15,14 @@ public class App
 
         int cipars2 = Integer.valueOf(scanner.nextLine());
 
-        int summa = cipars1 + cipars2;
+        int cipars3 = Integer.valueOf(scanner.nextLine());
+
+        int summa = cipars1 + cipars2 + cipars3;
         System.out.println("Summa ir: " + summa);
+        int reizinajums = cipars1 * cipars2 * cipars3;
+        System.out.println("Reizinajums ir: " + reizinajums);
+        double videjais = (double) (cipars1 + cipars2 + cipars3) / 3;
+        System.out.println("Videjais ir: " + videjais);
     }
 
 }
