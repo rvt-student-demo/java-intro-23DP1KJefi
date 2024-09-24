@@ -11,7 +11,7 @@ public class App
     {
         Scanner scanner = new Scanner(System.in); 
         int number = Integer.valueOf(scanner.nextLine());
-        for (int i = number; i < 101; i++) {
+        for (int i = number; i != 101; i++) {
             System.out.println(i);
         }
     }
